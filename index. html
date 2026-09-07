@@ -11,47 +11,26 @@
 
 <body>
 
-    <header>
-        <h1>V3nus-Book</h1>
+<header>
+    <h1>V3nus-Book</h1>
+    <p>O teu espaço para descobrir e partilhar livros.</p>
+</header>
 
-        <nav>
-            <a href="#">Início</a>
-            <a href="#">Categorias</a>
-            <a href="#">Livros</a>
-            <a href="#">Sobre nós</a>
-        </nav>
-    </header>
+<main>
+    <section>
+        <h2>Bem-vindo ao V3nus-Book 📚</h2>
+        <p>
+            Descobre novos livros, explora histórias
+            e encontra a tua próxima leitura.
+        </p>
 
-    <main>
+        <button>Explorar livros</button>
+    </section>
+</main>
 
-        <section>
-            <h2>Conhecimento ao teu alcance.</h2>
-
-            <p>
-                Encontre livros digitais para estudar,
-                aprender e descobrir novas histórias.
-            </p>
-
-            <button>Explorar livros</button>
-        </section>
-
-        <section>
-            <h2>Categorias</h2>
-
-            <ul>
-                <li>📚 Académicos</li>
-                <li>📖 Literatura</li>
-                <li>🧠 Desenvolvimento pessoal</li>
-                <li>💼 Negócios</li>
-                <li>🔬 Ciência</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 V3nus-Book</p>
-    </footer>
+<footer>
+    <p>© 2026 V3nus-Book</p>
+</footer>
 
 </body>
 </html>
