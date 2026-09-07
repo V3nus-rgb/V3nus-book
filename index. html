@@ -3,53 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>V3nus-Book</title>
-<link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #151515;
+            color: #eeeeee;
+        }
+
+        header {
+            background: #0d0d0d;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            letter-spacing: 4px;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #bbbbbb;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        main {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            color: #aaaaaa;
+            font-size: 18px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 6px;
+            background: #eeeeee;
+            color: #111111;
+            font-weight: bold;
+        }
+
+        .categorias {
+            margin-top: 60px;
+        }
+
+        .categoria {
+            background: #222222;
+            margin: 12px auto;
+            padding: 18px;
+            max-width: 400px;
+            border: 1px solid #333333;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 30px;
+            text-align: center;
+            border-top: 1px solid #333;
+            color: #777777;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>V3nus-Book</h1>
+        <h1>V3NUS-BOOK</h1>
 
         <nav>
             <a href="#">Início</a>
             <a href="#">Categorias</a>
             <a href="#">Livros</a>
-            <a href="#">Sobre nós</a>
+            <a href="#">Sobre</a>
         </nav>
     </header>
 
     <main>
-
-        <section>
-            <h2>Conhecimento ao teu alcance.</h2>
-
-            <p>
-                Encontre livros digitais para estudar,
-                aprender e descobrir novas histórias.
-            </p>
-
-            <button>Explorar livros</button>
-        </section>
-
-        <section>
-            <h2>Categorias</h2>
-
-            <ul>
-                <li>📚 Académicos</li>
-                <li>📖 Literatura</li>
-                <li>🧠 Desenvolvimento pessoal</li>
-                <li>💼 Negócios</li>
-                <li>🔬 Ciência</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 V3nus-Book</p>
-    </footer>
-
-</body>
-</html>
