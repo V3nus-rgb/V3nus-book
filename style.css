@@ -148,3 +148,57 @@ footer {
     }
 
     }
+.detalhes {
+    padding: 50px 20px;
+    text-align: center;
+    background: #151515;
+}
+
+.detalhes h2 {
+    color: #d4af37;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.detalhes-caixa {
+    max-width: 700px;
+    margin: auto;
+    background: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.detalhes-capa {
+    width: 150px;
+    height: 200px;
+    background: #292929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.detalhes-info h3 {
+    color: #d4af37;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.detalhes-info p {
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .detalhes-caixa {
+        flex-direction: column;
+        text-align: center;
+    }
+    }
