@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>V3nus-Book</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+<header class="topo">
     <div class="logo">V3nus-Book</div>
 
     <nav>
@@ -19,18 +17,38 @@
         <a href="#livros">Livros</a>
         <a href="#comunidade">Comunidade</a>
         <a href="#chat">Chat</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#perfil">Perfil</a>
+        <button class="menu-tres-pontos" onclick="abrirMenu()">⋮</button>
     </nav>
 </header>
 
+
+<!-- MENU DOS TRÊS PONTOS -->
+
+<div class="menu-popup" id="menuPopup">
+
+    <button onclick="abrirDefinicoes()">⚙️ Definições</button>
+    <button onclick="mostrarMensagem('🔔 Notificações')">🔔 Notificações</button>
+    <button onclick="mostrarMensagem('🔒 Privacidade')">🔒 Privacidade</button>
+    <button onclick="mostrarMensagem('🛡️ Segurança')">🛡️ Segurança</button>
+    <button onclick="mostrarMensagem('🚫 Utilizadores bloqueados')">🚫 Bloqueados</button>
+    <button onclick="mostrarMensagem('🚨 Área de denúncia')">🚨 Denunciar</button>
+    <button onclick="mostrarMensagem('ℹ️ V3nus-Book — versão 1.0')">ℹ️ Sobre</button>
+
+</div>
+
+
 <main>
 
-<!-- INÍCIO -->
+<!-- PÁGINA INICIAL -->
+
 <section class="hero" id="inicio">
 
     <div class="hero-conteudo">
 
-        <p class="mini-titulo">BEM-VINDO À V3NUS-BOOK</p>
+        <p class="mini-titulo">
+            BEM-VINDO À V3NUS-BOOK
+        </p>
 
         <h1>
             Descobre histórias.<br>
@@ -38,16 +56,17 @@
         </h1>
 
         <p class="hero-texto">
-            Um catálogo para descobrir livros de diferentes géneros
-            e uma comunidade para conversar sobre literatura.
+            Uma rede social para quem gosta de livros,
+            histórias e boas conversas.
         </p>
 
         <button onclick="irPara('livros')">
-            Explorar livros
+            📚 Explorar livros
         </button>
 
-        <button class="botao-secundario" onclick="irPara('comunidade')">
-            Entrar na comunidade
+        <button class="botao-secundario"
+                onclick="irPara('comunidade')">
+            👥 Comunidades
         </button>
 
     </div>
@@ -56,23 +75,37 @@
 
 
 <!-- LIVROS -->
+
 <section class="livros" id="livros">
 
     <div class="titulo-secao">
+
         <p>CATÁLOGO</p>
-        <h2>Livros em destaque</h2>
+
+        <h2>
+            Livros em destaque
+        </h2>
+
     </div>
+
 
     <div class="livros-container">
 
         <div class="livro">
-            <div class="capa capa-1">📕</div>
 
-            <span class="genero">CLÁSSICO</span>
+            <div class="capa">📕</div>
 
-            <h3>Dom Quixote</h3>
+            <span class="genero">
+                CLÁSSICO
+            </span>
 
-            <p class="autor">Miguel de Cervantes</p>
+            <h3>
+                Dom Quixote
+            </h3>
+
+            <p class="autor">
+                Miguel de Cervantes
+            </p>
 
             <button onclick="mostrarLivro(
                 'Dom Quixote',
@@ -83,18 +116,25 @@
             )">
                 Ver detalhes
             </button>
+
         </div>
 
 
         <div class="livro">
 
-            <div class="capa capa-2">❤️</div>
+            <div class="capa">❤️</div>
 
-            <span class="genero">ROMANCE</span>
+            <span class="genero">
+                ROMANCE
+            </span>
 
-            <h3>Orgulho e Preconceito</h3>
+            <h3>
+                Orgulho e Preconceito
+            </h3>
 
-            <p class="autor">Jane Austen</p>
+            <p class="autor">
+                Jane Austen
+            </p>
 
             <button onclick="mostrarLivro(
                 'Orgulho e Preconceito',
@@ -111,13 +151,19 @@
 
         <div class="livro">
 
-            <div class="capa capa-3">⚡</div>
+            <div class="capa">⚡</div>
 
-            <span class="genero">FICÇÃO</span>
+            <span class="genero">
+                FICÇÃO
+            </span>
 
-            <h3>Frankenstein</h3>
+            <h3>
+                Frankenstein
+            </h3>
 
-            <p class="autor">Mary Shelley</p>
+            <p class="autor">
+                Mary Shelley
+            </p>
 
             <button onclick="mostrarLivro(
                 'Frankenstein',
@@ -134,13 +180,19 @@
 
         <div class="livro">
 
-            <div class="capa capa-4">🔎</div>
+            <div class="capa">🔎</div>
 
-            <span class="genero">MISTÉRIO</span>
+            <span class="genero">
+                MISTÉRIO
+            </span>
 
-            <h3>Sherlock Holmes</h3>
+            <h3>
+                Sherlock Holmes
+            </h3>
 
-            <p class="autor">Arthur Conan Doyle</p>
+            <p class="autor">
+                Arthur Conan Doyle
+            </p>
 
             <button onclick="mostrarLivro(
                 'Sherlock Holmes',
@@ -157,13 +209,19 @@
 
         <div class="livro">
 
-            <div class="capa capa-5">🏝️</div>
+            <div class="capa">🏝️</div>
 
-            <span class="genero">AVENTURA</span>
+            <span class="genero">
+                AVENTURA
+            </span>
 
-            <h3>A Ilha do Tesouro</h3>
+            <h3>
+                A Ilha do Tesouro
+            </h3>
 
-            <p class="autor">Robert Louis Stevenson</p>
+            <p class="autor">
+                Robert Louis Stevenson
+            </p>
 
             <button onclick="mostrarLivro(
                 'A Ilha do Tesouro',
@@ -180,13 +238,19 @@
 
         <div class="livro">
 
-            <div class="capa capa-6">🐇</div>
+            <div class="capa">🐇</div>
 
-            <span class="genero">FANTASIA</span>
+            <span class="genero">
+                FANTASIA
+            </span>
 
-            <h3>Alice no País das Maravilhas</h3>
+            <h3>
+                Alice no País das Maravilhas
+            </h3>
 
-            <p class="autor">Lewis Carroll</p>
+            <p class="autor">
+                Lewis Carroll
+            </p>
 
             <button onclick="mostrarLivro(
                 'Alice no País das Maravilhas',
@@ -206,13 +270,16 @@
 
 
 <!-- DETALHES -->
+
 <section class="detalhes" id="detalhes">
 
     <div class="titulo-secao">
 
         <p>INFORMAÇÕES</p>
 
-        <h2>Detalhes do livro</h2>
+        <h2>
+            Detalhes do livro
+        </h2>
 
     </div>
 
@@ -223,13 +290,15 @@
             📖
         </div>
 
-
         <div class="detalhes-info">
 
-            <h3>Escolha um livro</h3>
+            <h3>
+                Escolha um livro
+            </h3>
 
             <p>
-                Selecione um livro acima para ver mais informações.
+                Selecione um livro acima para ver
+                mais informações.
             </p>
 
         </div>
@@ -239,20 +308,23 @@
 </section>
 
 
-<!-- COMUNIDADE -->
+<!-- COMUNIDADES -->
+
 <section class="comunidade" id="comunidade">
 
     <div class="titulo-comunidade">
 
-        <p>V3NUS-BOOK COMMUNITY</p>
+        <p>
+            V3NUS-BOOK COMMUNITY
+        </p>
 
         <h2>
             Encontra a tua comunidade
         </h2>
 
         <p>
-            Converse sobre livros, partilhe opiniões e descubra
-            leitores com interesses semelhantes.
+            Converse sobre livros, partilhe opiniões
+            e descubra leitores.
         </p>
 
     </div>
@@ -260,130 +332,77 @@
 
     <div class="comunidades-container">
 
-
         <div class="comunidade-card">
-
-            <div class="comunidade-icone">
-                ❤️
-            </div>
-
+            <div class="comunidade-icone">❤️</div>
             <h3>Romance</h3>
-
-            <p>
-                Conversas sobre romances e personagens.
-            </p>
-
+            <p>Conversas sobre romances e personagens.</p>
             <button onclick="entrarComunidade('Romance')">
                 Entrar
             </button>
-
         </div>
 
 
         <div class="comunidade-card">
-
-            <div class="comunidade-icone">
-                🔎
-            </div>
-
+            <div class="comunidade-icone">🔎</div>
             <h3>Mistério</h3>
-
-            <p>
-                Teorias, enigmas e investigações.
-            </p>
-
+            <p>Teorias, enigmas e investigações.</p>
             <button onclick="entrarComunidade('Mistério')">
                 Entrar
             </button>
-
         </div>
 
 
         <div class="comunidade-card">
-
-            <div class="comunidade-icone">
-                🧙
-            </div>
-
+            <div class="comunidade-icone">🧙</div>
             <h3>Fantasia</h3>
-
-            <p>
-                Magia, mundos fantásticos e aventuras.
-            </p>
-
+            <p>Magia, mundos fantásticos e aventuras.</p>
             <button onclick="entrarComunidade('Fantasia')">
                 Entrar
             </button>
-
         </div>
 
 
         <div class="comunidade-card">
-
-            <div class="comunidade-icone">
-                🚀
-            </div>
-
+            <div class="comunidade-icone">🚀</div>
             <h3>Ficção científica</h3>
-
-            <p>
-                Tecnologia, espaço e futuros imaginários.
-            </p>
-
+            <p>Tecnologia, espaço e futuros imaginários.</p>
             <button onclick="entrarComunidade('Ficção científica')">
                 Entrar
             </button>
-
         </div>
 
 
         <div class="comunidade-card">
-
-            <div class="comunidade-icone">
-                📚
-            </div>
-
+            <div class="comunidade-icone">📚</div>
             <h3>Clássicos</h3>
-
-            <p>
-                Debates sobre grandes obras literárias.
-            </p>
-
+            <p>Debates sobre grandes obras literárias.</p>
             <button onclick="entrarComunidade('Clássicos')">
                 Entrar
             </button>
-
         </div>
 
 
         <div class="comunidade-card">
-
-            <div class="comunidade-icone">
-                🎓
-            </div>
-
+            <div class="comunidade-icone">🎓</div>
             <h3>Educação</h3>
-
-            <p>
-                Estudos, aprendizagem e livros escolares.
-            </p>
-
+            <p>Estudos, aprendizagem e livros escolares.</p>
             <button onclick="entrarComunidade('Educação')">
                 Entrar
             </button>
-
         </div>
 
     </div>
 
 
-    <!-- FÓRUM -->
+    <!-- PUBLICAÇÕES -->
 
     <div class="forum">
 
         <div class="forum-titulo">
 
-            <p>COMUNIDADE</p>
+            <p>
+                FEED
+            </p>
 
             <h2>
                 Discussões recentes
@@ -398,7 +417,6 @@
                 J
             </div>
 
-
             <div class="post-conteudo">
 
                 <h3>
@@ -410,19 +428,22 @@
                 </p>
 
                 <p>
-                    Estou à procura de novas histórias para ler.
-                    Compartilhem as vossas recomendações!
+                    Compartilhem as vossas recomendações
+                    com a comunidade!
                 </p>
-
 
                 <div class="post-acoes">
 
-                    <button>
+                    <button onclick="gostar(this)">
                         👍 Gostar
                     </button>
 
-                    <button>
+                    <button onclick="mostrarMensagem('💬 Comentários')">
                         💬 Comentar
+                    </button>
+
+                    <button onclick="mostrarMensagem('⋮ Mais opções')">
+                        ⋮
                     </button>
 
                 </div>
@@ -437,7 +458,6 @@
             <div class="avatar">
                 L
             </div>
-
 
             <div class="post-conteudo">
 
@@ -454,15 +474,18 @@
                     e as ideias presentes na obra.
                 </p>
 
-
                 <div class="post-acoes">
 
-                    <button>
+                    <button onclick="gostar(this)">
                         👍 Gostar
                     </button>
 
-                    <button>
+                    <button onclick="mostrarMensagem('💬 Comentários')">
                         💬 Comentar
+                    </button>
+
+                    <button onclick="mostrarMensagem('⋮ Mais opções')">
+                        ⋮
                     </button>
 
                 </div>
@@ -476,12 +499,15 @@
 </section>
 
 
-<!-- CHAT PRIVADO -->
+<!-- CHAT -->
+
 <section class="chat" id="chat">
 
     <div class="titulo-secao">
 
-        <p>V3NUS-BOOK MESSAGES</p>
+        <p>
+            MENSAGENS
+        </p>
 
         <h2>
             Chat privado
@@ -503,27 +529,18 @@
                 Conversas
             </h3>
 
-
-            <button
-                class="utilizador"
-                onclick="abrirChat('Ana')"
-            >
+            <button class="utilizador"
+                    onclick="abrirChat('Ana')">
                 👩 Ana
             </button>
 
-
-            <button
-                class="utilizador"
-                onclick="abrirChat('Lucas')"
-            >
+            <button class="utilizador"
+                    onclick="abrirChat('Lucas')">
                 👨 Lucas
             </button>
 
-
-            <button
-                class="utilizador"
-                onclick="abrirChat('Maria')"
-            >
+            <button class="utilizador"
+                    onclick="abrirChat('Maria')">
                 👩 Maria
             </button>
 
@@ -531,7 +548,6 @@
 
 
         <div class="janela-chat">
-
 
             <div class="chat-topo">
 
@@ -555,10 +571,8 @@
             </div>
 
 
-            <div
-                class="mensagens"
-                id="mensagens"
-            >
+            <div class="mensagens"
+                 id="mensagens">
 
                 <p class="mensagem-sistema">
                     Escolha um utilizador para começar.
@@ -573,14 +587,12 @@
                     🎤
                 </button>
 
-
                 <input
                     type="text"
                     id="texto-mensagem"
                     placeholder="Escreva uma mensagem..."
                     onkeydown="pressionarEnter(event)"
                 >
-
 
                 <button onclick="enviarMensagem()">
                     ➤
@@ -595,7 +607,96 @@
 </section>
 
 
+<!-- PERFIL -->
+
+<section class="perfil" id="perfil">
+
+    <div class="titulo-secao">
+
+        <p>
+            MEU PERFIL
+        </p>
+
+        <h2>
+            Perfil do leitor
+        </h2>
+
+    </div>
+
+
+    <div class="perfil-caixa">
+
+        <div class="foto-perfil">
+            👤
+        </div>
+
+        <h3>
+            Leitor V3nus
+        </h3>
+
+        <p>
+            Apaixonado por livros e boas histórias.
+        </p>
+
+        <button onclick="editarPerfil()">
+            ✏️ Editar perfil
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- DEFINIÇÕES -->
+
+<section class="definicoes" id="definicoes">
+
+    <div class="titulo-secao">
+
+        <p>
+            CONFIGURAÇÕES
+        </p>
+
+        <h2>
+            Definições
+        </h2>
+
+    </div>
+
+
+    <div class="definicoes-container">
+
+        <button onclick="mostrarMensagem('👤 Conta')">
+            👤 Conta
+        </button>
+
+        <button onclick="mostrarMensagem('🔔 Notificações')">
+            🔔 Notificações
+        </button>
+
+        <button onclick="mostrarMensagem('🔒 Privacidade')">
+            🔒 Privacidade
+        </button>
+
+        <button onclick="mostrarMensagem('🛡️ Segurança')">
+            🛡️ Segurança
+        </button>
+
+        <button onclick="mostrarMensagem('🌙 Aparência')">
+            🌙 Aparência
+        </button>
+
+        <button onclick="mostrarMensagem('🌐 Idioma')">
+            🌐 Idioma
+        </button>
+
+    </div>
+
+</section>
+
+
 <!-- SOBRE -->
+
 <section class="sobre" id="sobre">
 
     <p>
@@ -607,16 +708,14 @@
     </h2>
 
     <p>
-        Um catálogo de livros criado para descobrir histórias
-        e aproximar leitores através da literatura.
+        Uma rede social dedicada aos livros,
+        à descoberta e à conversa entre leitores.
     </p>
 
 </section>
 
 </main>
 
-
-<!-- RODAPÉ -->
 
 <footer>
 
@@ -660,7 +759,6 @@ function mostrarLivro(
         .querySelector(".detalhes-info h3")
         .textContent = titulo;
 
-
     document
         .querySelector(".detalhes-info p")
         .innerHTML =
@@ -671,27 +769,19 @@ function mostrarLivro(
         "<br><br>" +
         descricao;
 
-
     document
         .querySelector(".detalhes-capa")
         .textContent = capa;
 
-
-    document
-        .getElementById("detalhes")
-        .scrollIntoView({
-            behavior: "smooth"
-        });
+    irPara("detalhes");
 
 }
 
 
 function entrarComunidade(nome) {
 
-    alert(
-        "Bem-vindo à comunidade " +
-        nome +
-        "!"
+    mostrarMensagem(
+        "👥 Entraste na comunidade " + nome
     );
 
 }
@@ -703,11 +793,9 @@ function abrirChat(nome) {
         .getElementById("nome-chat")
         .textContent = nome;
 
-
     document
         .getElementById("mensagens")
         .innerHTML =
-
         '<div class="mensagem-recebida">' +
         'Olá! Bem-vindo ao chat da V3nus-Book. 👋' +
         '</div>';
@@ -722,45 +810,34 @@ function enviarMensagem() {
             "texto-mensagem"
         );
 
-
     const texto =
         campo.value.trim();
 
-
     if (texto === "") {
-
         return;
-
     }
-
 
     const mensagens =
         document.getElementById(
             "mensagens"
         );
 
-
     const novaMensagem =
         document.createElement(
             "div"
         );
 
-
     novaMensagem.className =
         "mensagem-enviada";
 
-
     novaMensagem.textContent =
         texto;
-
 
     mensagens.appendChild(
         novaMensagem
     );
 
-
     campo.value = "";
-
 
     mensagens.scrollTop =
         mensagens.scrollHeight;
@@ -771,9 +848,7 @@ function enviarMensagem() {
 function pressionarEnter(event) {
 
     if (event.key === "Enter") {
-
         enviarMensagem();
-
     }
 
 }
@@ -781,8 +856,8 @@ function pressionarEnter(event) {
 
 function gravarAudio() {
 
-    alert(
-        "🎤 O envio de áudio será ligado ao sistema real de mensagens numa próxima etapa."
+    mostrarMensagem(
+        "🎤 O sistema de áudio será ligado ao servidor."
     );
 
 }
@@ -790,8 +865,8 @@ function gravarAudio() {
 
 function chamadaVoz() {
 
-    alert(
-        "📞 A chamada de voz será ligada ao sistema real numa próxima etapa."
+    mostrarMensagem(
+        "📞 A chamada de voz será ligada ao sistema online."
     );
 
 }
@@ -799,8 +874,54 @@ function chamadaVoz() {
 
 function videoChamada() {
 
-    alert(
-        "📹 A videochamada será ligada ao sistema real numa próxima etapa."
+    mostrarMensagem(
+        "📹 A videochamada será ligada ao sistema online."
+    );
+
+}
+
+
+function abrirMenu() {
+
+    const menu =
+        document.getElementById(
+            "menuPopup"
+        );
+
+    menu.classList.toggle("mostrar");
+
+}
+
+
+function abrirDefinicoes() {
+
+    document
+        .getElementById("menuPopup")
+        .classList.remove("mostrar");
+
+    irPara("definicoes");
+
+}
+
+
+function mostrarMensagem(texto) {
+
+    alert(texto);
+
+}
+
+
+function gostar(botao) {
+
+    botao.textContent = "❤️ Gostei";
+
+}
+
+
+function editarPerfil() {
+
+    mostrarMensagem(
+        "✏️ A edição completa do perfil será adicionada com as contas de utilizador."
     );
 
 }
@@ -808,4 +929,4 @@ function videoChamada() {
 </script>
 
 </body>
-    </html>
+        </html>
