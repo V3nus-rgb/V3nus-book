@@ -6,19 +6,21 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f5f0ff;
-    color: #24152f;
+    background: #111111;
+    color: #f1f1f1;
     text-align: center;
 }
 
 h1 {
-    background: #7b2cbf;
-    color: white;
+    background: #0a0a0a;
+    color: #d4af37;
     padding: 30px 15px;
     font-size: 36px;
+    border-bottom: 1px solid #333333;
 }
 
 p {
     margin-top: 40px;
     font-size: 20px;
-}
+    color: #cccccc;
+    }
