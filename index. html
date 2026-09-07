@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V3nus-Book</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>V3nus-Book</h1>
+
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Categorias</a>
+            <a href="#">Livros</a>
+            <a href="#">Sobre nós</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Conhecimento ao teu alcance.</h2>
+
+            <p>
+                Encontre livros digitais para estudar,
+                aprender e descobrir novas histórias.
+            </p>
+
+            <button>Explorar livros</button>
+        </section>
+
+        <section>
+            <h2>Categorias</h2>
+
+            <ul>
+                <li>📚 Académicos</li>
+                <li>📖 Literatura</li>
+                <li>🧠 Desenvolvimento pessoal</li>
+                <li>💼 Negócios</li>
+                <li>🔬 Ciência</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 V3nus-Book</p>
+    </footer>
+
+</body>
+</html>
