@@ -15,131 +15,586 @@
         <div class="logo">V3nus-Book</div>
 
         <nav>
-            <a href="#">Início</a>
-            <a href="#">Livros</a>
-            <a href="#">Categorias</a>
-            <a href="#">Sobre</a>
+            <a href="#inicio">Início</a>
+            <a href="#livros">Livros</a>
+            <a href="#comunidade">Comunidade</a>
+            <a href="#sobre">Sobre</a>
         </nav>
     </header>
 
+
     <main>
 
-        <section class="hero">
-            <h1>Bem-vindo ao V3nus-Book</h1>
+        <!-- INÍCIO -->
+        <section class="hero" id="inicio">
 
-            <p>
-                Descobre grandes histórias de diferentes géneros.
-            </p>
+            <div class="hero-conteudo">
 
-            <button>Explorar livros</button>
+                <p class="mini-titulo">BEM-VINDO À V3NUS-BOOK</p>
+
+                <h1>
+                    Descobre histórias.<br>
+                    Encontra leitores.
+                </h1>
+
+                <p class="hero-texto">
+                    Um catálogo para descobrir livros de diferentes géneros
+                    e uma comunidade para conversar sobre literatura.
+                </p>
+
+                <button onclick="irPara('livros')">
+                    Explorar livros
+                </button>
+
+                <button class="botao-secundario" onclick="irPara('comunidade')">
+                    Entrar na comunidade
+                </button>
+
+            </div>
+
         </section>
 
-        <section class="livros">
-            <h2>Livros em destaque</h2>
+
+        <!-- LIVROS -->
+        <section class="livros" id="livros">
+
+            <div class="titulo-secao">
+                <p>CATÁLOGO</p>
+                <h2>Livros em destaque</h2>
+            </div>
+
 
             <div class="livros-container">
 
+
+                <!-- LIVRO 1 -->
                 <div class="livro">
-                    <div class="capa">📕</div>
+
+                    <div class="capa capa-1">
+                        📕
+                    </div>
+
+                    <span class="genero">CLÁSSICO</span>
+
                     <h3>Dom Quixote</h3>
-                    <p>Miguel de Cervantes</p>
-                    <button onclick="alert('Dom Quixote — Miguel de Cervantes\n\nGénero: Clássico\n\nUma das obras mais conhecidas da literatura mundial.')">
-    Ver detalhes
-    </button>
+
+                    <p class="autor">
+                        Miguel de Cervantes
+                    </p>
+
+                    <button onclick="mostrarLivro(
+                        'Dom Quixote',
+                        'Miguel de Cervantes',
+                        'Clássico',
+                        'Uma das obras mais conhecidas da literatura mundial.',
+                        '📕'
+                    )">
+                        Ver detalhes
+                    </button>
+
                 </div>
 
+
+                <!-- LIVRO 2 -->
                 <div class="livro">
-                    <div class="capa">❤️</div>
+
+                    <div class="capa capa-2">
+                        ❤️
+                    </div>
+
+                    <span class="genero">ROMANCE</span>
+
                     <h3>Orgulho e Preconceito</h3>
-                    <p>Jane Austen</p>
-                    <button onclick="alert('Orgulho e Preconceito — Jane Austen\n\nGénero: Romance\n\nUm clássico da literatura inglesa centrado nas relações, costumes e diferenças sociais.')">
-    Ver detalhes
-    </button>
+
+                    <p class="autor">
+                        Jane Austen
+                    </p>
+
+                    <button onclick="mostrarLivro(
+                        'Orgulho e Preconceito',
+                        'Jane Austen',
+                        'Romance',
+                        'Um clássico sobre relações, costumes e diferenças sociais.',
+                        '❤️'
+                    )">
+                        Ver detalhes
+                    </button>
+
                 </div>
 
+
+                <!-- LIVRO 3 -->
                 <div class="livro">
-                    <div class="capa">⚡</div>
+
+                    <div class="capa capa-3">
+                        ⚡
+                    </div>
+
+                    <span class="genero">FICÇÃO</span>
+
                     <h3>Frankenstein</h3>
-                    <p>Mary Shelley</p>
-                    <button onclick="alert('Frankenstein — Mary Shelley\n\nGénero: Terror / Ficção\n\nUm clássico sobre ciência, responsabilidade e as consequências das escolhas humanas.')">
-    Ver detalhes
-    </button>
+
+                    <p class="autor">
+                        Mary Shelley
+                    </p>
+
+                    <button onclick="mostrarLivro(
+                        'Frankenstein',
+                        'Mary Shelley',
+                        'Terror / Ficção',
+                        'Um clássico sobre ciência, responsabilidade e escolhas humanas.',
+                        '⚡'
+                    )">
+                        Ver detalhes
+                    </button>
+
                 </div>
 
+
+                <!-- LIVRO 4 -->
                 <div class="livro">
-                    <div class="capa">🔎</div>
+
+                    <div class="capa capa-4">
+                        🔎
+                    </div>
+
+                    <span class="genero">MISTÉRIO</span>
+
                     <h3>Sherlock Holmes</h3>
-                    <p>Arthur Conan Doyle</p>
-                    <button onclick="alert('Sherlock Holmes — Arthur Conan Doyle\n\nGénero: Mistério\n\nUma coleção de aventuras protagonizadas pelo famoso detetive Sherlock Holmes.')">
-    Ver detalhes
-    </button>
+
+                    <p class="autor">
+                        Arthur Conan Doyle
+                    </p>
+
+                    <button onclick="mostrarLivro(
+                        'Sherlock Holmes',
+                        'Arthur Conan Doyle',
+                        'Mistério',
+                        'Aventuras protagonizadas pelo famoso detetive Sherlock Holmes.',
+                        '🔎'
+                    )">
+                        Ver detalhes
+                    </button>
+
                 </div>
 
+
+                <!-- LIVRO 5 -->
                 <div class="livro">
-                    <div class="capa">🏝️</div>
+
+                    <div class="capa capa-5">
+                        🏝️
+                    </div>
+
+                    <span class="genero">AVENTURA</span>
+
                     <h3>A Ilha do Tesouro</h3>
-                    <p>Robert Louis Stevenson</p>
-                    <button onclick="alert('A Ilha do Tesouro — Robert Louis Stevenson\n\nGénero: Aventura\n\nUma clássica aventura de piratas, mapas e tesouros.')">
-    Ver detalhes
-        </button>
+
+                    <p class="autor">
+                        Robert Louis Stevenson
+                    </p>
+
+                    <button onclick="mostrarLivro(
+                        'A Ilha do Tesouro',
+                        'Robert Louis Stevenson',
+                        'Aventura',
+                        'Uma clássica aventura de piratas, mapas e tesouros.',
+                        '🏝️'
+                    )">
+                        Ver detalhes
+                    </button>
+
                 </div>
 
+
+                <!-- LIVRO 6 -->
                 <div class="livro">
-                    <div class="capa">🐇</div>
+
+                    <div class="capa capa-6">
+                        🐇
+                    </div>
+
+                    <span class="genero">FANTASIA</span>
+
                     <h3>Alice no País das Maravilhas</h3>
-                    <p>Lewis Carroll</p>
-                    <button onclick="alert('Alice no País das Maravilhas — Lewis Carroll\n\nGénero: Fantasia\n\nUma aventura fantástica num mundo cheio de personagens e situações extraordinárias.')">
-    Ver detalhes
-        </button>
+
+                    <p class="autor">
+                        Lewis Carroll
+                    </p>
+
+                    <button onclick="mostrarLivro(
+                        'Alice no País das Maravilhas',
+                        'Lewis Carroll',
+                        'Fantasia',
+                        'Uma aventura fantástica num mundo cheio de personagens extraordinárias.',
+                        '🐇'
+                    )">
+                        Ver detalhes
+                    </button>
+
                 </div>
 
             </div>
+
         </section>
-        <section class="detalhes">
-    <h2>Detalhes do livro</h2>
 
-    <div class="detalhes-caixa">
-        <div class="detalhes-capa">📖</div>
 
-        <div class="detalhes-info">
-            <h3>Escolha um livro</h3>
-            <p>Selecione um livro acima para ver mais informações.</p>
-        </div>
-    </div>
-    </section>
+        <!-- DETALHES -->
+        <section class="detalhes" id="detalhes">
+
+            <div class="titulo-secao">
+
+                <p>INFORMAÇÕES</p>
+
+                <h2>Detalhes do livro</h2>
+
+            </div>
+
+
+            <div class="detalhes-caixa">
+
+                <div class="detalhes-capa">
+                    📖
+                </div>
+
+
+                <div class="detalhes-info">
+
+                    <h3>Escolha um livro</h3>
+
+                    <p>
+                        Selecione um livro acima para ver mais informações.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMUNIDADE -->
+        <section class="comunidade" id="comunidade">
+
+            <div class="titulo-comunidade">
+
+                <p>V3NUS-BOOK COMMUNITY</p>
+
+                <h2>Encontra a tua comunidade</h2>
+
+                <p>
+                    Converse sobre livros, partilhe opiniões e descubra
+                    leitores com interesses semelhantes.
+                </p>
+
+            </div>
+
+
+            <div class="comunidades-container">
+
+
+                <div class="comunidade-card">
+
+                    <div class="comunidade-icone">
+                        ❤️
+                    </div>
+
+                    <h3>Romance</h3>
+
+                    <p>
+                        Conversas sobre romances e personagens.
+                    </p>
+
+                    <button onclick="entrarComunidade('Romance')">
+                        Entrar
+                    </button>
+
+                </div>
+
+
+                <div class="comunidade-card">
+
+                    <div class="comunidade-icone">
+                        🔎
+                    </div>
+
+                    <h3>Mistério</h3>
+
+                    <p>
+                        Teorias, enigmas e investigações.
+                    </p>
+
+                    <button onclick="entrarComunidade('Mistério')">
+                        Entrar
+                    </button>
+
+                </div>
+
+
+                <div class="comunidade-card">
+
+                    <div class="comunidade-icone">
+                        🧙
+                    </div>
+
+                    <h3>Fantasia</h3>
+
+                    <p>
+                        Magia, mundos fantásticos e aventuras.
+                    </p>
+
+                    <button onclick="entrarComunidade('Fantasia')">
+                        Entrar
+                    </button>
+
+                </div>
+
+
+                <div class="comunidade-card">
+
+                    <div class="comunidade-icone">
+                        🚀
+                    </div>
+
+                    <h3>Ficção científica</h3>
+
+                    <p>
+                        Tecnologia, espaço e futuros imaginários.
+                    </p>
+
+                    <button onclick="entrarComunidade('Ficção científica')">
+                        Entrar
+                    </button>
+
+                </div>
+
+
+                <div class="comunidade-card">
+
+                    <div class="comunidade-icone">
+                        📚
+                    </div>
+
+                    <h3>Clássicos</h3>
+
+                    <p>
+                        Debates sobre grandes obras literárias.
+                    </p>
+
+                    <button onclick="entrarComunidade('Clássicos')">
+                        Entrar
+                    </button>
+
+                </div>
+
+
+                <div class="comunidade-card">
+
+                    <div class="comunidade-icone">
+                        🎓
+                    </div>
+
+                    <h3>Educação</h3>
+
+                    <p>
+                        Estudos, aprendizagem e livros escolares.
+                    </p>
+
+                    <button onclick="entrarComunidade('Educação')">
+                        Entrar
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- DISCUSSÕES -->
+            <div class="forum">
+
+                <div class="forum-titulo">
+
+                    <p>COMUNIDADE</p>
+
+                    <h2>Discussões recentes</h2>
+
+                </div>
+
+
+                <div class="post">
+
+                    <div class="avatar">
+                        J
+                    </div>
+
+
+                    <div class="post-conteudo">
+
+                        <h3>
+                            Qual é o melhor livro que vocês já leram?
+                        </h3>
+
+                        <p class="usuario">
+                            Leitor • Comunidade Geral
+                        </p>
+
+                        <p>
+                            Estou à procura de novas histórias para ler.
+                            Compartilhem as vossas recomendações!
+                        </p>
+
+
+                        <div class="post-acoes">
+
+                            <button>
+                                👍 Gostar
+                            </button>
+
+                            <button>
+                                💬 Comentar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="post">
+
+                    <div class="avatar">
+                        L
+                    </div>
+
+
+                    <div class="post-conteudo">
+
+                        <h3>
+                            O que acharam de Dom Quixote?
+                        </h3>
+
+                        <p class="usuario">
+                            Leitor • Clássicos
+                        </p>
+
+                        <p>
+                            Vamos conversar sobre os personagens
+                            e as ideias presentes na obra.
+                        </p>
+
+
+                        <div class="post-acoes">
+
+                            <button>
+                                👍 Gostar
+                            </button>
+
+                            <button>
+                                💬 Comentar
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="sobre" id="sobre">
+
+            <p>SOBRE NÓS</p>
+
+            <h2>V3nus-Book</h2>
+
+            <p>
+                Um catálogo de livros criado para descobrir histórias
+                e aproximar leitores através da literatura.
+            </p>
+
+        </section>
 
     </main>
 
+
     <footer>
-        <section class="detalhes">
-    <h2>Detalhes do livro</h2>
 
-    <div class="detalhes-caixa">
-        <div class="detalhes-capa">📖</div>
+        <strong>V3nus-Book</strong>
 
-        <div class="detalhes-info">
-            <h3>Escolha um livro</h3>
-            <p>Selecione um livro acima para ver mais informações.</p>
-        </div>
-    </div>
-    </section>
-        <p>© 2026 V3nus-Book</p>
+        <p>
+            Leia. Descubra. Converse.
+        </p>
+
+        <p>
+            © 2026 V3nus-Book
+        </p>
+
     </footer>
+
+
     <script>
-function mostrarLivro(titulo, autor, genero, descricao, capa) {
-    document.querySelector(".detalhes-info h3").textContent = titulo;
-    document.querySelector(".detalhes-info p").innerHTML =
-        "<strong>Autor:</strong> " + autor +
-        "<br><strong>Género:</strong> " + genero +
-        "<br><br>" + descricao;
 
-    document.querySelector(".detalhes-capa").textContent = capa;
+        function irPara(id) {
 
-    document.querySelector(".detalhes").scrollIntoView({
-        behavior: "smooth"
-    });
-}
+            document.getElementById(id).scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+        function mostrarLivro(
+            titulo,
+            autor,
+            genero,
+            descricao,
+            capa
+        ) {
+
+            document.querySelector(
+                ".detalhes-info h3"
+            ).textContent = titulo;
+
+
+            document.querySelector(
+                ".detalhes-info p"
+            ).innerHTML =
+                "<strong>Autor:</strong> " + autor +
+                "<br><strong>Género:</strong> " + genero +
+                "<br><br>" + descricao;
+
+
+            document.querySelector(
+                ".detalhes-capa"
+            ).textContent = capa;
+
+
+            document.getElementById(
+                "detalhes"
+            ).scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+        function entrarComunidade(nome) {
+
+            alert(
+                "Bem-vindo à comunidade " +
+                nome +
+                "!\n\n" +
+                "Em breve poderemos transformar esta área numa comunidade real, com contas, publicações, comentários e mensagens."
+            );
+
+        }
+
     </script>
 
 </body>
-        </html>
+    </html>
