@@ -125,6 +125,21 @@
     </section>
         <p>© 2026 V3nus-Book</p>
     </footer>
+    <script>
+function mostrarLivro(titulo, autor, genero, descricao, capa) {
+    document.querySelector(".detalhes-info h3").textContent = titulo;
+    document.querySelector(".detalhes-info p").innerHTML =
+        "<strong>Autor:</strong> " + autor +
+        "<br><strong>Género:</strong> " + genero +
+        "<br><br>" + descricao;
+
+    document.querySelector(".detalhes-capa").textContent = capa;
+
+    document.querySelector(".detalhes").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+    </script>
 
 </body>
         </html>
