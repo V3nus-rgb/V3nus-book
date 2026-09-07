@@ -3,34 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>V3nus-Book</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
     <h1>V3nus-Book</h1>
-    <p>O teu espaço para descobrir e partilhar livros.</p>
-</header>
 
-<main>
-    <section>
-        <h2>Bem-vindo ao V3nus-Book 📚</h2>
-        <p>
-            Descobre novos livros, explora histórias
-            e encontra a tua próxima leitura.
-        </p>
-
-        <button>Explorar livros</button>
-    </section>
-</main>
-
-<footer>
-    <p>© 2026 V3nus-Book</p>
-</footer>
+    <p>Bem-vindo ao meu site!</p>
 
 </body>
 </html>
